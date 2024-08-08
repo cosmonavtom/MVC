@@ -33,4 +33,3 @@ class ShoesController:
 
     def translate_keys(self, en_key):
         return self.model.translate_keys(en_key)
-
