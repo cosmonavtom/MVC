@@ -25,14 +25,14 @@ class TimeTableController:
             for element in data:
                 dates.append(element['date'])
         else:
-            return "Оценок нет!"
+            return "Расписания нет!"
         return dates
 
     def courses_dates(self):
         if self.model.get_dates():
             return self.only_courses_list(), self.only_dates_list()
         else:
-            return "Предметов нет! Оценок нет!"
+            return "Предметов нет! Расписания нет!"
 
     def add_date(self, course, date, filename, validation):
         if validation in ['is_superuser', 'is_staff']:
