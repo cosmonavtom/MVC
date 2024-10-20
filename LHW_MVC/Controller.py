@@ -37,6 +37,6 @@ class TimeTableController:
     def add_date(self, course, date, filename, validation):
         if validation in ['is_superuser', 'is_staff']:
             self.model.add_date(course, date, filename)
-            return "Оценка успешно добавлена!"
+            return "Расписание успешно добавлено!"
         else:
             return "Нет доступа!"
